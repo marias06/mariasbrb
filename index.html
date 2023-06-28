@@ -8,18 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Primeiro link do carrossel -->
-    <link rel="stylesheet" href="https://cdn.jsdlivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
     <title>AluraBooks</title>
 </head>
 <body>
-    <header class="cabeçalho">
+    <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container_botao">
             <label for="menu">
-            <span class="cabeçalho_menu-hunburguer container_imagem"></span>
+            <span class="cabecalho_menu-hunburger container_imagem"></span>
             </label>
             <ul class="lista-menu">
                 <li class="lista-menu_titulo">Categoria</li>
@@ -59,29 +59,27 @@
         <h2 class="carrossel_titulo">Novos Lançamentos</h2>
 
         <div class="swiper">
-        <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
 
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka"></div>
-            <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre Liderança"></div>
-            <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
-            <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro sobre Front-end"></div>
-            <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro Portugol"></div>
-            <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobvre Acessibilidade"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafta"></div>
+                <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
+                <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro sobre Front-end"></div>
+                <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        </div>
-
     </section>
 
     <!-- Segundo link do carrossel -->
     <script src="https://cdn.jsdlivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script>
-        const swiper= new swiper('.swiper', {
+        const swiper= new Swiper('.swiper', {
             spaceBetween:10,
             slidesPerView: 3,
             pagination: {

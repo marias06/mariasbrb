@@ -1,4 +1,4 @@
-.cabeçalho_menu-hunburguer{
+.cabecalho_menu-hunburger{
     width: 24px;
     height: 24px;
     background-image: url(../img/Menu.svg);
@@ -7,7 +7,7 @@
     display: inline-block;
 }
 
-.cabeçalho{
+.cabecalho{
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
@@ -27,8 +27,8 @@
 .lista-menu{
     display: none;
     position: absolute;
-    top: 100%;
-    width: 60vw;                                /*---------------- */
+    top: 80%;
+    width: 60vw;
 }
 
 .container_botao:checked ~ .lista-menu{
@@ -52,6 +52,7 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .container_botao{
